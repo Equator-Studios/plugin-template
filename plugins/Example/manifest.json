@@ -1,0 +1,9 @@
+{
+    "name": "Example Plugin",
+    "display_name": "Example",
+    "description": "This is the description of the Example Plugin",
+    "category": "category",
+    "tags": [],
+    "version": "1.0.0",
+    "author": "Example Author"
+}
