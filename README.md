@@ -22,13 +22,13 @@ Inside the plugin directory, there should be four files:
 
     ```json
     {
-        "name": "Example Plugin",
-        "display_name": "Example",
-        "description": "This is the description of the Example Plugin",
-        "category": "Category",
-        "tags": ["tag1", "tag2"],
+        "name": "hello_world",
+        "display_name": "Hello World",
+        "description": "This is the description of the Hello World Plugin",
+        "category": "category",
+        "tags": [],
         "version": "1.0.0",
-        "author": "Your Name"
+        "author": "Hello World Author"
     }
     ```
 

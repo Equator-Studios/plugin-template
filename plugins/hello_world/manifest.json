@@ -1,0 +1,9 @@
+{
+    "name": "hello_world",
+    "display_name": "Hello World",
+    "description": "This is the description of the Hello World Plugin",
+    "category": "category",
+    "tags": [],
+    "version": "1.0.0",
+    "author": "Hello World Author"
+}
