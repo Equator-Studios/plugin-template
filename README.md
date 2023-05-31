@@ -14,6 +14,7 @@ Inside the plugin directory, there should be four files:
     - `display_name`: The display name of the plugin. This is the name that will be shown in the UI.
     - `description`: A brief description of what the plugin does.
     - `category`: The category of the plugin.
+    - `image_url`: (Optional) The URL to the image for the plugin displayed in Equator.
     - `tags`: An array of tags that relate to the plugin. This should be an empty array if there are no relevant tags.
     - `version`: The version of the plugin.
     - `author`: The name of the plugin's author.
@@ -26,6 +27,7 @@ Inside the plugin directory, there should be four files:
         "display_name": "Hello World",
         "description": "This is the description of the Hello World Plugin",
         "category": "category",
+        "image_url": "",
         "tags": [],
         "version": "1.0.0",
         "author": "Hello World Author"
