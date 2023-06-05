@@ -1,3 +1,7 @@
 // example server.js
 
-console.log("Hello world from the server!")
+return () => ({
+    packetHandler: msg => {
+        console.log('recieved message from plugin: ' + msg);
+    }
+})

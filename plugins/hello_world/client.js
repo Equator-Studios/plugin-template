@@ -1,3 +1,8 @@
 // example client.js
 
-console.log("Hello world from the client!")
+return ({ shared }) => ({
+    init: () => {
+        console.log("sending ping");
+        shared.socket.send("plugins/hello_world", "hello world from the client");
+    },
+})
