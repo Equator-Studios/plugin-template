@@ -1,0 +1,10 @@
+{
+	"name": "fences",
+	"display_name": "Property Fences",
+	"description": "Calculates cost of putting up a fence",
+	"category": "Hello",
+	"tags": [],
+	"version": "1.0.0",
+	"author": "Equator"
+}
+
