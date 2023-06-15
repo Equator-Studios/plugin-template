@@ -72,7 +72,7 @@ return ({shared}) => {
 	};
 
 	const Menu = (stuff) => {
-		const [layers] = useObserver(shared, o => o.path('project', 'layers').shallow().map(layers => {
+		const [layers] = useObserver(shared, o => o.path('project', 'layers').shallow(1).map(layers => {
 			return layers.filter(layer => layer.isFencesPluginLayer);
 		}));
 
