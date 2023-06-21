@@ -1,0 +1,10 @@
+{
+	"name": "jobs_and_leads",
+	"display_name": "Jobs and Leads",
+	"description": "Find local contractors for the jobs you need done!",
+	"image_url": "https://thumbs.dreamstime.com/b/house-under-construction-blueprints-building-project-53360048.jpg",
+	"category": "Jobs and Leads",
+	"tags": [],
+	"version": "1.0.0",
+	"author": "Equator"
+}
