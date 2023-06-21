@@ -73,7 +73,7 @@ return ({shared}) => {
 
 	const Menu = (stuff) => {
 		const [layers] = useObserver(shared, o => o.path('project', 'layers').shallow(1).map(layers => {
-			return layers.filter(layer => layer.isFencesPluginLayer);
+			return layers.filter(layer => layer.pluginFences_layer);
 		}));
 
 		return React.createElement(style.HorizontalAlign, {
@@ -95,7 +95,7 @@ return ({shared}) => {
 				},
 				onClick: async () => {
 					const layer = await Layer.fromName('measurement').requestFromUser('Cross Section', shared.view);
-					layer.isFencesPluginLayer = true;
+					layer.pluginFences_layer = true;
 					layer.name = "Fence Boundary";
 					shared.project.add(layer);
 				},
