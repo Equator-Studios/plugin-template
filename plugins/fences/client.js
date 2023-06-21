@@ -1,5 +1,26 @@
 
 return ({shared}) => {
+	const TrackingModal = ({modal}) => {
+		const button = (name) => {
+			return React.createElement(style.Button, {
+				onClick: () => {
+					shared.user.settings.pluginFences_tracking = name;
+					modal.close();
+				},
+			}, name);
+		};
+
+		return React.createElement(style.Paper, {},
+			React.createElement(style.HorizontalAlign, {style: {padding: 20}},
+				React.createElement(style.Center, {style: {height: 50}}, "Select what you'll be using this plugin for"),
+				React.createElement(style.VerticalAlign, {style: {width: '100%', height: '100%'}},
+					button("Customer"),
+					button("Provider"),
+				)
+			)
+		);
+	};
+
 	const ModalInfo = ({info}) => {
 		if (!info) {
 			return 'Loading...';
@@ -111,6 +132,11 @@ return ({shared}) => {
 					'plugins/fences': 'Fences',
 				}
 			}
-		}
+		},
+		init: ({autoLoaded}) => {
+			if (autoLoaded && !shared.user.settings.pluginFences_tracking) {
+				shared.ui.showModal(TrackingModal);
+			}
+		},
 	};
 };
