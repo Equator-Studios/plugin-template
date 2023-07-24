@@ -1,0 +1,10 @@
+{
+	"name": "bat",
+	"display_name": "Bids and Tenders",
+	"description": "Shows Bids and Tenders available",
+	"category": "Hello",
+	"tags": [],
+	"version": "1.0.0",
+	"author": "Equator"
+}
+
